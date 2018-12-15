@@ -1,0 +1,17 @@
+node
+{
+    stage('Checkout')
+    {
+        git credentialsId: '47648fe6-5e0f-48ca-b341-29cd5467c302', url: 'https://github.com/pinka35/pinka.git'
+    }
+    stage('Build')
+    {
+        echo "build"
+        
+    }
+    stage('Unit Testing')
+    {
+        echo "unit testing"
+    }
+    
+}
